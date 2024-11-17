@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MQTT Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>MQTT Simulator</h1>
+            <button id="connectionToggle" class="connection-status disconnected">konek heula</button>
+        </div>
+
+        <div class="input-group">
+            <label for="topic">Topic:</label>
+            <input type="text" id="topic" placeholder="masukan topic antum di sini" />
+            <!-- <button id="addSubscriber" class="button">Add Subscriber</button> -->
+        </div>
+
+        <!-- <div class="subscribers">
+            <h3>Subscribers</h3>
+            <div id="subscriberList"></div>
+        </div> -->
+
+        <div class="input-group">
+            <label for="message">Message:</label>
+            <input type="text" id="message" placeholder="masukan pesan antum di sini" />
+            <button id="publish" class="button">Publish</button>
+        </div>
+
+        <div class="message-details" id="messageDetails">
+            <div class="data-format">
+                <div class="format-label">ASCII:</div>
+                <div id="asciiValues" class="format-content"></div>
+            </div>
+            <div class="data-format">
+                <div class="format-label">Binary:</div>
+                <div id="binaryValues" class="format-content"></div>
+            </div>
+        </div>
+
+        <div class="message-log" id="messageLog"></div>
+    </div>
+
+    <script src="mqtt-simulator.js"></script>
+</body>
+</html>
